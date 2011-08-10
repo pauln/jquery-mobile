@@ -695,7 +695,7 @@
 							// XXX_jblas: We need to fix this so that it removes the document
 							//            base URL, and then prepends with the new page URL.
 							//if full path exists and is same, chop it - helps IE out
-							thisUrl = thisUrl.replace( location.protocol + '//' + location.host + location.pathname, '' );
+							thisUrl = thisUrl.replace( location.protocol + '//' + location.host + newPath, '' );
 
 							if( !/^(\w+:|#|\/)/.test( thisUrl ) ) {
 								$( this ).attr( thisAttr, newPath + thisUrl );
